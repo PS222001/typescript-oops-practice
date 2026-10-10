@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Salary System</title>
+</head>
+
+<body>
+
+    <h1>Employee Salary System</h1>
+
+
+    <h3>Employee Name</h3>
+
+    <input
+        type="text"
+        id="employeeName"
+        placeholder="Enter employee name"
+    >
+
+
+    <h3>Basic Salary</h3>
+
+    <input
+        type="number"
+        id="basicSalary"
+        placeholder="Enter basic salary"
+    >
+
+
+    <h3>Select Role</h3>
+
+    <select id="role">
+
+        <option value="Developer">Developer</option>
+
+        <option value="Tester">Tester</option>
+
+        <option value="Manager">Manager</option>
+
+    </select>
+
+
+    <br><br>
+
+    <button onclick="calculateEmployeeSalary()">
+        Calculate Salary
+    </button>
+
+
+    <h3>Employee Details</h3>
+
+    <p id="result"></p>
+
+
+    <script src="employee.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Ride Booking System</title>
+
+</head>
+
+<body>
+
+    <h1>Ride Booking System</h1>
+
+    <label>Distance (km):</label>
+
+    <input type="number" id="distance">
+
+    <br><br>
+
+
+    <label>Ride Type:</label>
+
+    <select id="rideType">
+
+        <option value="">-- Select Ride --</option>
+
+        <option value="Bike">Bike Ride</option>
+
+        <option value="Auto">Auto Ride</option>
+
+        <option value="Cab">Cab Ride</option>
+
+    </select>
+
+    <br><br>
+
+
+    <button onclick="calculateRideFare()">
+        Calculate Fare
+    </button>
+
+    <p id="result"></p>
+
+
+    <script src="ride.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Management System</title>
+</head>
+<body>
+
+    <h2>Hospital Management System</h2>
+
+    <label>Name:</label>
+    <input type="text" id="name">
+    <br><br>
+
+    <label>Age:</label>
+    <input type="number" id="age">
+    <br><br>
+
+    <label>Role:</label>
+    <select id="role" onchange="showExtraField()">
+        <option value="">-- Select Role --</option>
+        <option value="doctor">Doctor</option>
+        <option value="nurse">Nurse</option>
+        <option value="patient">Patient</option>
+    </select>
+
+    <br><br>
+
+    <!-- Extra field will appear here -->
+    <div id="extraField"></div>
+
+    <br>
+
+    <button onclick="displayHospitalInfo()">
+        Display Information
+    </button>
+
+    <hr>
+
+    <div id="result"></div>
+
+    <script src="hospital.js"></script>
+
+</body>
+</html>

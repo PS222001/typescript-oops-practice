@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Bonus System</title>
+
+</head>
+
+<body>
+
+    <h1>Employee Bonus System</h1>
+
+    <label>Employee ID:</label>
+    <input type="number" id="employeeId">
+    <br><br>
+
+    <label>Name:</label>
+    <input type="text" id="name">
+    <br><br>
+
+    <label>Salary:</label>
+    <input type="number" id="salary">
+    <br><br>
+
+    <label>Employee Type:</label>
+
+    <select id="employeeType">
+        <option value="">-- Select Employee Type --</option>
+        <option value="Developer">Developer</option>
+        <option value="Manager">Manager</option>
+        <option value="Intern">Intern</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculateEmployeeBonus()">
+        Calculate Bonus
+    </button>
+
+    <p id="result"></p>
+
+    <script src="employeebonus.js"></script>
+
+</body>
+
+</html>

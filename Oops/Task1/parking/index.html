@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Parking Management</title>
+
+</head>
+
+<body>
+
+    <h1>Parking Management System</h1>
+
+    <label>Vehicle Number:</label>
+    <input type="text" id="vehicleNumber">
+
+    <br><br>
+
+    <label>Parking Duration (Hours):</label>
+    <input type="number" id="parkingHours">
+
+    <br><br>
+
+    <label>Vehicle Type:</label>
+
+    <select id="vehicleType">
+
+        <option value="">-- Select Vehicle --</option>
+
+        <option value="Car">Car</option>
+
+        <option value="Bike">Bike</option>
+
+        <option value="Truck">Truck</option>
+
+    </select>
+
+    <br><br>
+
+    <button onclick="calculateParking()">
+        Calculate Parking Fee
+    </button>
+
+    <p id="result"></p>
+
+    <script src="parking.js"></script>
+
+</body>
+
+</html>

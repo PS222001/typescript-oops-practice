@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Complete Payroll System</title>
+
+</head>
+
+<body>
+
+    <h1>Complete Payroll System</h1>
+
+    <label>Employee ID:</label>
+    <input type="number" id="employeeId">
+
+    <br><br>
+
+    <label>Name:</label>
+    <input type="text" id="name">
+
+    <br><br>
+
+    <label>Basic Salary:</label>
+    <input type="number" id="basicSalary">
+
+    <br><br>
+
+    <label>Employee Type:</label>
+
+    <select id="employeeType">
+
+        <option value="">-- Select Employee --</option>
+
+        <option value="Developer">Developer</option>
+
+        <option value="Manager">Manager</option>
+
+        <option value="Tester">Tester</option>
+
+        <option value="HR">HR</option>
+
+    </select>
+
+    <br><br>
+
+    <button onclick="calculatePayroll()">
+        Calculate Payroll
+    </button>
+
+    <p id="result"></p>
+
+    <script src="payroll.js"></script>
+
+</body>
+
+</html>

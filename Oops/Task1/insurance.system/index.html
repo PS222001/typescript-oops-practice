@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insurance">
+    <title>Insurance System</title>
+</head>
+
+<body>
+
+    <h1>Insurance System</h1>
+
+    <label>Policy Number:</label>
+    <input type="number" id="policyNumber">
+    <br><br>
+
+    <label>Customer Name:</label>
+    <input type="text" id="customerName">
+    <br><br>
+
+    <label>Insurance Amount:</label>
+    <input type="number" id="amount">
+    <br><br>
+
+    <label>Insurance Type:</label>
+
+    <select id="insuranceType">
+        <option value="">-- Select Insurance --</option>
+        <option value="Health">Health Insurance</option>
+        <option value="Vehicle">Vehicle Insurance</option>
+        <option value="Life">Life Insurance</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculateInsurancePremium()">
+        Calculate Premium
+    </button>
+
+    <p id="result"></p>
+
+    <script src="insurance.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food delivery">
+    <title>Food Delivery System</title>
+</head>
+
+<body>
+
+    <h1>Food Delivery System</h1>
+
+    <label>Food Name:</label>
+    <input type="text" id="foodName">
+    <br><br>
+
+    <label>Price:</label>
+    <input type="number" id="price">
+    <br><br>
+
+    <label>Food Type:</label>
+
+    <select id="foodType">
+        <option value="">-- Select Food --</option>
+        <option value="Pizza">Pizza</option>
+        <option value="Burger">Burger</option>
+        <option value="Biryani">Biryani</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculateOrder()">
+        Calculate Order
+    </button>
+
+    <p id="result"></p>
+
+    <script src="food.delivery.js"></script>
+
+</body>
+</html>

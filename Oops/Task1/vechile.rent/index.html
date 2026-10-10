@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vehicle Rental System</title>
+</head>
+
+<body>
+
+    <h1>Vehicle Rental System</h1>
+
+    <label>Vehicle Number:</label>
+    <input type="text" id="vehicleNumber">
+
+    <br><br>
+
+    <label>Number of Days:</label>
+    <input type="number" id="days">
+
+    <br><br>
+
+    <label>Vehicle Type:</label>
+
+    <select id="vehicleType">
+        <option value="Car">Car</option>
+        <option value="Bike">Bike</option>
+        <option value="Bus">Bus</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculateRental()">
+        Calculate Rent
+    </button>
+
+    <p id="result"></p>
+
+    <script src="vehicle.js"></script>
+
+</body>
+
+</html>

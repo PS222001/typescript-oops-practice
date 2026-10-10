@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ATM System</title>
+
+</head>
+
+<body>
+
+    <h1>ATM System</h1>
+
+
+    <h3>PIN Validation</h3>
+
+    <label>Enter PIN:</label>
+
+    <input type="password" id="pin">
+
+    <button onclick="validateAccountPin()">
+        Validate PIN
+    </button>
+
+
+    <br><br>
+
+
+    <h3>Deposit / Withdrawal</h3>
+
+    <label>Amount:</label>
+
+    <input type="number" id="amount">
+
+
+    <br><br>
+
+
+    <button onclick="depositMoney()">
+        Deposit
+    </button>
+
+    <button onclick="withdrawMoney()">
+        Withdraw
+    </button>
+
+
+    <br><br>
+
+
+    <button onclick="checkBalance()">
+        Check Balance
+    </button>
+
+
+    <p id="result"></p>
+
+
+    <script src="atm.js"></script>
+
+</body>
+
+</html>

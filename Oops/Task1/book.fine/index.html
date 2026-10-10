@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Library Management System using TypeScript OOP">
+    <title>Library Management System</title>
+</head>
+
+<body>
+
+    <h1>Library Management</h1>
+
+    <label>Title:</label>
+    <input type="text" id="title">
+
+    <br><br>
+
+    <label>Late Days:</label>
+    <input type="number" id="lateDays">
+
+    <br><br>
+
+    <label>Item Type:</label>
+
+    <select id="itemType">
+        <option value="Books">Books</option>
+        <option value="Magazine">Magazine</option>
+        <option value="DVD">DVD</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculateLibraryFine()">
+        Calculate Fine
+    </button>
+
+    <p id="result"></p>
+
+    <script src="bookfine.js"></script>
+
+</body>
+
+</html>
